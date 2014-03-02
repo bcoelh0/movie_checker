@@ -40,6 +40,7 @@ group :assets do
   gem "less-rails"
   gem 'uglifier', '>= 1.3.0'
   gem "vcr", "~> 2.8.0" # saves interaction with web for faster tests
+  gem "webmock", "1.15" # used by vrc
 end
 
 group :doc do

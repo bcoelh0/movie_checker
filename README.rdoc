@@ -4,4 +4,6 @@
 This app allows users to add a list of movies to their collection. When the movies are available for download with DVDRip quality the user recieves an email.
 
 To Do:
-- Everything
+- setup heroku scheduler
+- setup the email events
+- add more tests

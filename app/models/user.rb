@@ -1,6 +1,6 @@
 class User < ActiveRecord::Base
   has_many :movies
-  validates :email, presence: true
+  validates :email, presence: true, uniqueness: true
 
   def check_all_movies
     movies.each do |movie|

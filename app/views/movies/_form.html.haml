@@ -1,0 +1,3 @@
+= form_for [@user, @movie], html: { class: "form-inline" } do |f|
+  = f.text_field :title, placeholder: "movie title", :autofocus => true, class: "input-large"
+  = f.submit "Add Movie", class: "btn"

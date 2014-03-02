@@ -1,4 +1,13 @@
 MovieChecker::Application.routes.draw do
+  root "user_sessions#new"
+  get "/new" => "user_sessions#new"
+  post "/new" => "user_sessions#create"
+  get "/logout" => "user_sessions#destroy"
+
+  resources :users do
+    resources :movies
+  end
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
@@ -39,7 +48,7 @@ MovieChecker::Application.routes.draw do
   #       get 'recent', on: :collection
   #     end
   #   end
-  
+
   # Example resource route with concerns:
   #   concern :toggleable do
   #     post 'toggle'

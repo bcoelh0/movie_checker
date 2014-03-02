@@ -10,5 +10,10 @@
 
 <%= yield %>
 
+<% unless @current_user.nil? %>
+  <div class="pull-right">
+    <%= link_to "Logout", logout_path, class: "btn btn-warning" %>
+  </div>
+<% end %>
 </body>
 </html>

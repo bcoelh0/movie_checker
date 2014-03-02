@@ -50,6 +50,10 @@ group :development, :test do
   gem "shoulda-matchers"
   gem "database_cleaner", "~> 1.0.1"
   gem "debugger"
+end
+
+group :test do
   gem "vcr", "~> 2.8.0" # saves interaction with web for faster tests
   gem "webmock", "1.15" # used by vrc
 end
+

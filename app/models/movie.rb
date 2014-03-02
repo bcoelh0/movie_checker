@@ -3,7 +3,7 @@ class Movie < ActiveRecord::Base
   validates :title, presence: true
   validates :user, presence: true
 
-  def check_existance
+  def exists?
     page = HTTParty.get(
       "http://thepiratebay.se/search/#{URI::encode(title)}/0/7/202"
     )

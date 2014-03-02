@@ -26,12 +26,10 @@ gem 'jbuilder', '~> 1.2'
 
 gem "haml", "~> 4.0.3"
 gem "haml-rails", "~> 0.4"
-
-
 gem "twitter-bootstrap-rails"
-
-
 gem "httparty", "~> 0.13.0"
+
+gem "rspec-rails"
 
 group :assets do
   gem 'therubyracer'

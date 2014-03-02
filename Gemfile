@@ -51,5 +51,5 @@ group :development, :test do
   gem "database_cleaner", "~> 1.0.1"
   gem "debugger"
   gem "vcr", "~> 2.8.0" # saves interaction with web for faster tests
-  gem "webmock", "~> 1.17.3" # used by vrc
+  gem "webmock", "1.15" # used by vrc
 end

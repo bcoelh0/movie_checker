@@ -6,15 +6,6 @@ gem 'rails', '4.0.0'
 # Use sqlite3 as the database for Active Record
 gem "sqlite3", group: [:development, :test]
 
-# Use SCSS for stylesheets
-
-
-# Use Uglifier as compressor for JavaScript assets
-
-
-# Use CoffeeScript for .js.coffee assets and views
-
-
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 
@@ -26,7 +17,7 @@ gem 'jbuilder', '~> 1.2'
 
 gem "haml", "~> 4.0.3"
 gem "haml-rails", "~> 0.4"
-gem "twitter-bootstrap-rails"
+
 gem "httparty", "~> 0.13.0"
 
 gem "rspec-rails"
@@ -38,6 +29,7 @@ group :assets do
   gem 'sass-rails', '~> 4.0.0'
   gem 'coffee-rails', '~> 4.0.0'
   gem "less-rails"
+  gem "twitter-bootstrap-rails"
   gem 'uglifier', '>= 1.3.0'
   gem "vcr", "~> 2.8.0" # saves interaction with web for faster tests
   gem "webmock", "1.15" # used by vrc

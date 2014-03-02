@@ -32,6 +32,8 @@ gem "twitter-bootstrap-rails"
 
 gem "therubyracer"
 
+gem "httparty", "~> 0.13.0"
+
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false
@@ -48,4 +50,5 @@ group :development, :test do
   gem "shoulda-matchers"
   gem "database_cleaner", "~> 1.0.1"
   gem "debugger"
+  gem "vcr", "~> 2.8.0"
 end

@@ -30,6 +30,8 @@ gem "twitter-bootstrap-rails"
 gem "httparty", "~> 0.13.0"
 
 gem "rspec-rails"
+gem "shoulda-matchers"
+
 
 group :assets do
   gem 'therubyracer'
@@ -52,10 +54,6 @@ group :production do
 end
 
 group :development, :test do
-  gem "cucumber-rails", :require => false
-  gem "rspec-rails"
-  gem "shoulda-matchers"
-  gem "database_cleaner", "~> 1.0.1"
   gem "debugger"
 end
 

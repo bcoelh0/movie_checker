@@ -7,13 +7,13 @@ gem 'rails', '4.0.0'
 gem "sqlite3", group: [:development, :test]
 
 # Use SCSS for stylesheets
-gem 'sass-rails', '~> 4.0.0'
+
 
 # Use Uglifier as compressor for JavaScript assets
-gem 'uglifier', '>= 1.3.0'
+
 
 # Use CoffeeScript for .js.coffee assets and views
-gem 'coffee-rails', '~> 4.0.0'
+
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
@@ -27,12 +27,20 @@ gem 'jbuilder', '~> 1.2'
 gem "haml", "~> 4.0.3"
 gem "haml-rails", "~> 0.4"
 
-gem "less-rails"
+
 gem "twitter-bootstrap-rails"
 
-gem "therubyracer"
 
 gem "httparty", "~> 0.13.0"
+
+group :assets do
+  gem 'therubyracer'
+  gem 'sass-rails', '~> 4.0.0'
+  gem 'coffee-rails', '~> 4.0.0'
+  gem "less-rails"
+  gem 'uglifier', '>= 1.3.0'
+  gem "vcr", "~> 2.8.0" # saves interaction with web for faster tests
+end
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.

@@ -13,12 +13,6 @@ class MoviesController < ApplicationController
     redirect_to user_movies_path current_user
   end
 
-  def edit
-  end
-
-  def update
-  end
-
   def destroy
     Movie.find(params[:id]).destroy
     redirect_to user_movies_path current_user

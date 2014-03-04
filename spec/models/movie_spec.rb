@@ -5,7 +5,6 @@ describe Movie do
   it { should belong_to :user }
   it { should validate_presence_of :user }
   it { should validate_presence_of :title }
-  its(:title) { should_not be_blank }
 
   describe "#exists?" do
     let(:user) { User.create!(:email => "rand@email.com") }

@@ -23,6 +23,7 @@ gem "httparty", "~> 0.13.0"
 gem "rspec-rails"
 gem "shoulda-matchers"
 
+gem "twitter-bootstrap-rails"
 
 group :assets do
   gem 'therubyracer'
